@@ -49,7 +49,7 @@ const Popular = () => {
               </div>
             ) : (
               // После загрузки отображаем реальный контент
-              <Bloks data={data!} />
+              <Bloks data={data!} value={popular} />
             )}
           </div>
         </div>

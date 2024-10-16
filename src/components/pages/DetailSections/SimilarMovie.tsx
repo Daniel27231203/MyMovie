@@ -35,7 +35,7 @@ const SimilarMovie = () => {
             </div>
           ) : // После загрузки отображаем реальный контент
           results ? (
-            <Bloks data={results} />
+            <Bloks data={results} value="similar" />
           ) : (
             <p>похожих данных нет</p>
           )}

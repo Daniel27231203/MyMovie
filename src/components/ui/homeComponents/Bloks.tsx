@@ -29,7 +29,11 @@ const Bloks: FC<IData> = ({ data, value, type }) => {
         <>
           <div
             onClick={() => {
-              router.push(`/${value || "movie"}/${item.id}`);
+              if (value === "similar") {
+                router.push(`${item.id}`);
+              } else {
+                router.push(`/${value || item.media_type}/${item.id}`);
+              }
             }}
             key={index}
             className={scss.block}

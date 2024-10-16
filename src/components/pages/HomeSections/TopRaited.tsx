@@ -48,7 +48,7 @@ const TopRaited = () => {
               </div>
             ) : (
               // После загрузки отображаем реальный контент
-              <Bloks data={data!} />
+              <Bloks data={data!} value={topRated} />
             )}
           </div>
         </div>
